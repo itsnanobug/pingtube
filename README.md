@@ -139,7 +139,6 @@ I originally tried some existing software for this task, but I couldn’t get an
 So I built this for fun and to help out a friend who needed a simple solution.
 
 ## License
-This is free and unencumbered software released into the public domain.
-...
+This is free and unencumbered software released into the public domain.<br>
 For more information, please refer to <https://unlicense.org/>
 
