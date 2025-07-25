@@ -2,7 +2,7 @@
 set -e
 
 INSTALL_DIR="/opt/pingtube"
-USER_NAME="nanoservice"            # brugernavn (ikke UID)
+USER_NAME="nanoservice"            # username (not UID)
 SERVICE_NAME="pingtube"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
