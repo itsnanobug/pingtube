@@ -4,7 +4,8 @@
 
 It is designed for self-hosting on Linux and runs as a systemd service.
 
----
+
+
 
 ## Features
 
@@ -16,14 +17,16 @@ It is designed for self-hosting on Linux and runs as a systemd service.
 - Simple JSON configuration
 - Runs as a background service on Linux
 
----
+
+
 
 ## Tested environment
 
 PingTube has so far only been tested on **Ubuntu 24.04**.  
 It should work on other Debian/Ubuntu-based systems, but this has not been verified.
 
----
+
+
 
 ## How it works
 
@@ -32,7 +35,8 @@ It should work on other Debian/Ubuntu-based systems, but this has not been verif
 3. Every interval (default 5 minutes), it checks the feeds and posts links to any new videos published since `first_seen`.
 4. Detected videos are logged to a file and stored in `seen.json`.
 
----
+
+
 
 ## Requirements
 
@@ -41,7 +45,8 @@ It should work on other Debian/Ubuntu-based systems, but this has not been verif
 - Linux with `systemd`
 - A **Discord webhook** (see below)
 
----
+
+
 
 ## Discord webhook
 
@@ -51,7 +56,8 @@ To create one:
 2. Choose **Integrations → Webhooks**
 3. Create a webhook, copy the webhook URL, and paste it into your `config.json`
 
----
+
+
 
 ## Configuration
 
@@ -105,6 +111,7 @@ This will:
 
 ## Logs
 
+
 Logs are stored in:<br>
 `/var/log/pingtube/pingtube.log`<br>
 and rotated automatically by `logrotate`.<br>
@@ -112,9 +119,11 @@ and rotated automatically by `logrotate`.<br>
 Follow logs live with:<br>
 `sudo journalctl -u pingtube.service -f`
 
+
 ## State and statistics
 - `seen.json`: tracks which videos have been posted
 - `stats/`: stores simple JSON stats files with counts
+
 
 ## Updating feeds
 
@@ -124,6 +133,7 @@ To add a new YouTube channel:
 3. Restart the service:
 `sudo systemctl restart pingtube.service`
 
+
 ## About this project
 This is a very small tool I made for my own use as a **Linux administrator**.<br>
 I am **not a developer**, and this was just a small side project to solve a simple problem.<br>
@@ -132,11 +142,13 @@ I do not plan to add many features or maintain it as a full software project.
 Feel free to use it if it solves your problem, or ignore it if it doesn't.<br>
 Pull requests or suggestions are welcome, but this is meant to be a simple, no-fuss solution.
 
+
 ## Why "PingTube"?
 It "pings" Discord with new YouTube uploads.
 
 I originally tried some existing software for this task, but I couldn’t get any of them to work.<br>
 So I built this for fun and to help out a friend who needed a simple solution.
+
 
 ## License
 This is free and unencumbered software released into the public domain.<br>
