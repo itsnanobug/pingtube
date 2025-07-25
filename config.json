@@ -1,0 +1,7 @@
+{
+  "interval_seconds": 300,
+  "discord_webhook_url": "https://discordapp.com/api/webhooks/XYZ/XYZ",
+  "feeds": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=XYZ"
+  ]
+}
