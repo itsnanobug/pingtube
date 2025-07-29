@@ -92,9 +92,6 @@ You can then copy the RSS feed URL and paste it into the feeds list in your conf
 ## Installation as a service
 An install script is provided: `install_pingtube_service.sh`.
 
-Before running it, **edit the script and set the `USER_NAME` variable** to the Linux user that should run the service.<br>
-This user will own the files in `/opt/pingtube` and the logs in `/var/log/pingtube`.
-
 Run:
 ```bash
 chmod +x install_pingtube_service.sh
